@@ -12,21 +12,7 @@ layout: default
   <p class="eyebrow">Public tutorial library</p>
   <h1 class="home-title">Data-driven methods for design students who need more than intuition.</h1>
   <p class="home-intro">This collection teaches GIS, remote sensing, data visualization, and NLP as working design tools: ways to read territory, measure change, build evidence, and communicate research with clarity.</p>
-
-  <div class="hero-grid">
-    <div class="hero-stat">
-      <span>{{ visible_tutorials | size }}</span>
-      <p>Tutorials across GIS, data science, and NLP.</p>
-    </div>
-    <div class="hero-stat">
-      <span>Design-first</span>
-      <p>Technical workflows framed for architecture, landscape, urban, and research practice.</p>
-    </div>
-    <div class="hero-stat">
-      <span>Evidence</span>
-      <p>Learn how to move from observation to analysis, and from analysis to argument.</p>
-    </div>
-  </div>
+  <p class="home-note">{{ visible_tutorials | size }} tutorials across GIS, data science, and NLP, written for architecture, landscape, urban, and research practice.</p>
 </section>
 
 <section class="home-section" id="gis">
@@ -38,17 +24,21 @@ layout: default
     </div>
   </div>
 
-  <div class="tutorial-grid">
+  <div class="tutorial-list">
     {% for tutorial in gis_tutorials %}
-    <a class="tutorial-card" href="{{ tutorial.url | relative_url }}">
-      <p class="card-meta">{{ tutorial.difficulty | default: 'tutorial' }}</p>
-      <h3>{{ tutorial.title }}</h3>
-      {% if tutorial.subtitle %}
-      <p>{{ tutorial.subtitle }}</p>
-      {% endif %}
-      {% if tutorial.tools and tutorial.tools.size > 0 %}
-      <p class="card-tools">{{ tutorial.tools | slice: 0, 3 | join: ' / ' }}</p>
-      {% endif %}
+    <a class="tutorial-row" href="{{ tutorial.url | relative_url }}">
+      <div class="tutorial-row-main">
+        <h3>{{ tutorial.title }}</h3>
+        {% if tutorial.subtitle %}
+        <p>{{ tutorial.subtitle }}</p>
+        {% endif %}
+      </div>
+      <div class="tutorial-row-meta">
+        <p>{{ tutorial.difficulty | default: 'tutorial' }}</p>
+        {% if tutorial.tools and tutorial.tools.size > 0 %}
+        <p>{{ tutorial.tools | slice: 0, 3 | join: ' / ' }}</p>
+        {% endif %}
+      </div>
     </a>
     {% endfor %}
   </div>
@@ -63,17 +53,21 @@ layout: default
     </div>
   </div>
 
-  <div class="tutorial-grid">
+  <div class="tutorial-list">
     {% for tutorial in data_tutorials %}
-    <a class="tutorial-card" href="{{ tutorial.url | relative_url }}">
-      <p class="card-meta">{{ tutorial.difficulty | default: 'tutorial' }}</p>
-      <h3>{{ tutorial.title }}</h3>
-      {% if tutorial.subtitle %}
-      <p>{{ tutorial.subtitle }}</p>
-      {% endif %}
-      {% if tutorial.tools and tutorial.tools.size > 0 %}
-      <p class="card-tools">{{ tutorial.tools | slice: 0, 3 | join: ' / ' }}</p>
-      {% endif %}
+    <a class="tutorial-row" href="{{ tutorial.url | relative_url }}">
+      <div class="tutorial-row-main">
+        <h3>{{ tutorial.title }}</h3>
+        {% if tutorial.subtitle %}
+        <p>{{ tutorial.subtitle }}</p>
+        {% endif %}
+      </div>
+      <div class="tutorial-row-meta">
+        <p>{{ tutorial.difficulty | default: 'tutorial' }}</p>
+        {% if tutorial.tools and tutorial.tools.size > 0 %}
+        <p>{{ tutorial.tools | slice: 0, 3 | join: ' / ' }}</p>
+        {% endif %}
+      </div>
     </a>
     {% endfor %}
   </div>
@@ -88,17 +82,21 @@ layout: default
     </div>
   </div>
 
-  <div class="tutorial-grid">
+  <div class="tutorial-list">
     {% for tutorial in nlp_tutorials %}
-    <a class="tutorial-card" href="{{ tutorial.url | relative_url }}">
-      <p class="card-meta">{{ tutorial.difficulty | default: 'tutorial' }}</p>
-      <h3>{{ tutorial.title }}</h3>
-      {% if tutorial.subtitle %}
-      <p>{{ tutorial.subtitle }}</p>
-      {% endif %}
-      {% if tutorial.tools and tutorial.tools.size > 0 %}
-      <p class="card-tools">{{ tutorial.tools | slice: 0, 3 | join: ' / ' }}</p>
-      {% endif %}
+    <a class="tutorial-row" href="{{ tutorial.url | relative_url }}">
+      <div class="tutorial-row-main">
+        <h3>{{ tutorial.title }}</h3>
+        {% if tutorial.subtitle %}
+        <p>{{ tutorial.subtitle }}</p>
+        {% endif %}
+      </div>
+      <div class="tutorial-row-meta">
+        <p>{{ tutorial.difficulty | default: 'tutorial' }}</p>
+        {% if tutorial.tools and tutorial.tools.size > 0 %}
+        <p>{{ tutorial.tools | slice: 0, 3 | join: ' / ' }}</p>
+        {% endif %}
+      </div>
     </a>
     {% endfor %}
   </div>
