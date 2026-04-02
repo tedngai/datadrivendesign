@@ -1,0 +1,18 @@
+.env
+.env.*
+!.env.example
+
+.DS_Store
+__pycache__/
+*.pyc
+
+.obsidian/
+.ruff_cache/
+AGENTS.md
+
+old tutorials/
+future tutorials/
+
+video_audio/
+video_metadata/
+video_transcripts/

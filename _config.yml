@@ -1,0 +1,33 @@
+title: Data-Driven Design
+description: Tutorials for GIS, data visualization, data science, and NLP in design education.
+url: https://tedngai.github.io
+baseurl: /datadrivendesign
+markdown: kramdown
+theme: minima
+
+collections:
+  tutorials:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: tutorial
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - .env
+  - .obsidian
+  - .ruff_cache
+  - AGENTS.md
+  - old tutorials
+  - future tutorials
+  - video_audio
+  - video_metadata
+  - video_transcripts
