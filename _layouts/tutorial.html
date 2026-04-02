@@ -2,21 +2,36 @@
 layout: default
 ---
 
-<article class="tutorial">
-  <p><a href="{{ '/' | relative_url }}">Home</a></p>
+<article class="tutorial-page">
+  <p class="eyebrow-link"><a href="{{ '/' | relative_url }}">Back to library</a></p>
 
-  <h1>{{ page.title }}</h1>
+  <header class="tutorial-hero">
+    <div class="tutorial-hero-main">
+      {% if page.category %}
+      <p class="eyebrow">{{ page.category | downcase | replace: '-', ' ' }}</p>
+      {% endif %}
 
-  {% if page.subtitle %}
-  <p class="subtitle">{{ page.subtitle }}</p>
-  {% endif %}
+      <h1 class="tutorial-title">{{ page.title }}</h1>
 
-  <ul class="meta-list">
-    {% if page.category %}<li><strong>Category:</strong> {{ page.category | downcase | replace: '-', ' ' }}</li>{% endif %}
-    {% if page.difficulty %}<li><strong>Difficulty:</strong> {{ page.difficulty }}</li>{% endif %}
-    {% if page.tools %}<li><strong>Tools:</strong> {{ page.tools | join: ', ' }}</li>{% endif %}
-    {% if page.date %}<li><strong>Date:</strong> {{ page.date }}</li>{% endif %}
-  </ul>
+      {% if page.subtitle %}
+      <p class="tutorial-subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+    </div>
 
-  {{ content }}
+    <aside class="tutorial-meta" aria-label="Tutorial details">
+      {% if page.difficulty %}
+      <p><span>Difficulty</span>{{ page.difficulty }}</p>
+      {% endif %}
+      {% if page.tools and page.tools.size > 0 %}
+      <p><span>Tools</span>{{ page.tools | join: ', ' }}</p>
+      {% endif %}
+      {% if page.date %}
+      <p><span>Updated</span>{{ page.date }}</p>
+      {% endif %}
+    </aside>
+  </header>
+
+  <section class="tutorial-content prose">
+    {{ content }}
+  </section>
 </article>
