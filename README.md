@@ -29,7 +29,7 @@ Primary topic areas:
 └── PUBLISHING.md
 ```
 
-The following working directories are intentionally excluded from the public site:
+The following working directories are intentionally excluded from the GitHub Pages site build, and are also intended to stay out of the public repository unless explicitly needed:
 
 - `old tutorials/`
 - `future tutorials/`
