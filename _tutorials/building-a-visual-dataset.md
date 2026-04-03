@@ -2,7 +2,8 @@
 title: "Building a Visual Dataset"
 subtitle: "Collecting, organizing, and describing images with AI for design research"
 date: "2026-04-02"
-category: "data-science"
+category: "ai"
+series_order: 4
 tools: ["Python", "Pandas", "OpenAI", "Pillow", "SerpApi", "Jupyter Notebook"]
 difficulty: "intermediate"
 youtube_ids: []

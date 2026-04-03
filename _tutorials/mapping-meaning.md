@@ -2,7 +2,8 @@
 title: "Mapping Meaning"
 subtitle: "How embeddings turn text collections into searchable semantic landscapes"
 date: "2026-04-02"
-category: "data-science"
+category: "ai"
+series_order: 2
 tools: ["Python", "Pandas", "OpenAI", "Hugging Face", "UMAP", "Jupyter Notebook"]
 difficulty: "intermediate"
 youtube_ids: []

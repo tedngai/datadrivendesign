@@ -2,7 +2,8 @@
 title: "From Spreadsheets to Scripts"
 subtitle: "A practical introduction to Python data workflows for design students"
 date: "2026-04-02"
-category: "data-science"
+category: "ai"
+series_order: 1
 tools: ["Python", "Pandas", "CSV", "Jupyter Notebook"]
 difficulty: "beginner"
 youtube_ids: []

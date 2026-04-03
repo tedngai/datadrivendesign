@@ -2,7 +2,8 @@
 title: "Asking Better Questions"
 subtitle: "Prompt engineering as a research method for classification, summary, and analysis"
 date: "2026-04-02"
-category: "data-science"
+category: "ai"
+series_order: 3
 tools: ["Python", "OpenAI", "Pandas", "Jupyter Notebook"]
 difficulty: "intermediate"
 youtube_ids: []

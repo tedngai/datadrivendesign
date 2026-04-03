@@ -5,14 +5,15 @@ layout: default
 
 {% assign visible_tutorials = site.tutorials | where_exp: "item", "item.slug != 'home'" | sort: "title" %}
 {% assign gis_tutorials = visible_tutorials | where_exp: "item", "item.category == 'gis'" %}
+{% assign ai_tutorials = visible_tutorials | where_exp: "item", "item.category == 'ai'" | sort: "series_order" %}
 {% assign data_tutorials = visible_tutorials | where_exp: "item", "item.category == 'data-science'" %}
 {% assign nlp_tutorials = visible_tutorials | where_exp: "item", "item.category == 'nlp'" %}
 
 <section class="home-hero">
   <p class="eyebrow">Public tutorial library</p>
   <h1 class="home-title">Data-driven methods for design students who need more than intuition.</h1>
-  <p class="home-intro">This collection teaches GIS, remote sensing, data visualization, and NLP as working design tools: ways to read territory, measure change, build evidence, and communicate research with clarity.</p>
-  <p class="home-note">{{ visible_tutorials | size }} tutorials across GIS, data science, and NLP, written for architecture, landscape, urban, and research practice.</p>
+  <p class="home-intro">This collection teaches GIS, AI, data visualization, and NLP as working design tools: ways to read territory, measure change, structure evidence, and communicate research with clarity.</p>
+  <p class="home-note">{{ visible_tutorials | size }} tutorials across GIS, AI, data science, and NLP, written for architecture, landscape, urban, and research practice.</p>
 </section>
 
 <section class="home-section" id="gis">
@@ -44,9 +45,38 @@ layout: default
   </div>
 </section>
 
-<section class="home-section" id="data-science">
+<section class="home-section" id="ai">
   <div class="section-head">
     <p class="eyebrow">02</p>
+    <div>
+      <h2>AI for Design Research</h2>
+      <p>Computational methods for working with text, images, prompting, and semantic structure as research material rather than novelty output.</p>
+    </div>
+  </div>
+
+  <div class="tutorial-list">
+    {% for tutorial in ai_tutorials %}
+    <a class="tutorial-row" href="{{ tutorial.url | relative_url }}">
+      <div class="tutorial-row-main">
+        <h3>{{ tutorial.title }}</h3>
+        {% if tutorial.subtitle %}
+        <p>{{ tutorial.subtitle }}</p>
+        {% endif %}
+      </div>
+      <div class="tutorial-row-meta">
+        <p>{{ tutorial.difficulty | default: 'tutorial' }}</p>
+        {% if tutorial.tools and tutorial.tools.size > 0 %}
+        <p>{{ tutorial.tools | slice: 0, 3 | join: ' / ' }}</p>
+        {% endif %}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="home-section" id="data-science">
+  <div class="section-head">
+    <p class="eyebrow">03</p>
     <div>
       <h2>Data Visualization and Data Science</h2>
       <p>Collection, cleanup, plotting, and interpretation workflows that turn raw information into readable arguments.</p>
@@ -75,7 +105,7 @@ layout: default
 
 <section class="home-section" id="nlp">
   <div class="section-head">
-    <p class="eyebrow">03</p>
+    <p class="eyebrow">04</p>
     <div>
       <h2>Natural Language Processing</h2>
       <p>Text cleaning, exploratory analysis, and computational reading methods for research that works with language as data.</p>
