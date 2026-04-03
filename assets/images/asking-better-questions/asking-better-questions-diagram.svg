@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Tutorial illustration">
+<rect width="1600" height="900" fill="#f3f0e9"/>
+<style>
+text { font-family: Helvetica, Arial, sans-serif; fill: #111111; }
+.small { font-size: 22px; fill: #66615a; }
+.body { font-size: 26px; fill: #66615a; }
+.title { font-size: 58px; font-weight: 700; letter-spacing: -1px; }
+.label { font-size: 24px; font-weight: 700; }
+.muted { fill: #66615a; }
+.accent { fill: #b6421d; }
+.line { stroke: #171310; stroke-opacity: 0.18; stroke-width: 2; }
+.box { fill: none; stroke: #111111; stroke-width: 2; }
+.arrow { stroke: #b6421d; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+</style>
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L0,6 L9,3 z" fill="#b6421d" />
+  </marker>
+</defs>
+<text x="90" y="120" class="title">ASKING BETTER QUESTIONS</text><text x="92" y="165" class="body">Prompt design as method: from messy text to structured outputs</text><rect x="90" y="250" width="440" height="150" class="box"/><rect x="610" y="250" width="340" height="150" class="box"/><rect x="1040" y="250" width="420" height="150" class="box"/><text x="120" y="305" class="label">Research question</text><text x="120" y="345" class="body">What themes recur in these project statements?</text><text x="640" y="305" class="label">Structured prompt</text><text x="640" y="345" class="body">role + task + JSON output</text><text x="1070" y="305" class="label">Model response</text><text x="1070" y="345" class="body">{"category": ..., "summary": ...}</text><line x1="530" y1="325" x2="610" y2="325" class="arrow"/><line x1="950" y1="325" x2="1040" y2="325" class="arrow"/><rect x="150" y="510" width="420" height="44" fill="none" stroke="#171310" stroke-opacity="0.5" stroke-width="1.5"/><text x="175" y="539" class="small">row 1: project description</text><line x1="600" y1="532" x2="760" y2="532" class="arrow"/><rect x="790" y="510" width="520" height="44" fill="none" stroke="#171310" stroke-opacity="0.5" stroke-width="1.5"/><text x="815" y="539" class="small">{"category": "...", "summary": "..."}</text><rect x="150" y="600" width="420" height="44" fill="none" stroke="#171310" stroke-opacity="0.5" stroke-width="1.5"/><text x="175" y="629" class="small">row 2: project description</text><line x1="600" y1="622" x2="760" y2="622" class="arrow"/><rect x="790" y="600" width="520" height="44" fill="none" stroke="#171310" stroke-opacity="0.5" stroke-width="1.5"/><text x="815" y="629" class="small">{"category": "...", "summary": "..."}</text><rect x="150" y="690" width="420" height="44" fill="none" stroke="#171310" stroke-opacity="0.5" stroke-width="1.5"/><text x="175" y="719" class="small">row 3: project description</text><line x1="600" y1="712" x2="760" y2="712" class="arrow"/><rect x="790" y="690" width="520" height="44" fill="none" stroke="#171310" stroke-opacity="0.5" stroke-width="1.5"/><text x="815" y="719" class="small">{"category": "...", "summary": "..."}</text>
+</svg>

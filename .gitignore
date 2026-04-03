@@ -9,6 +9,7 @@ __pycache__/
 .obsidian/
 .ruff_cache/
 AGENTS.md
+DESIGN.md
 
 old tutorials/
 future tutorials/
