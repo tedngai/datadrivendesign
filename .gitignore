@@ -23,6 +23,7 @@ fetch_video_transcripts.py
 refine_tutorials.py
 regenerate_data_viz_charts.py
 repair_gis_markdown.py
+fix_ai_diagrams.py
 
 data/Artworks.csv
 

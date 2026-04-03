@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Tutorial illustration">
+<rect width="1600" height="900" fill="#f3f0e9"/>
+<style>
+text { font-family: Helvetica, Arial, sans-serif; fill: #111111; }
+.small { font-size: 22px; fill: #66615a; }
+.body { font-size: 26px; fill: #66615a; }
+.title { font-size: 58px; font-weight: 700; letter-spacing: -1px; }
+.label { font-size: 24px; font-weight: 700; }
+.accent { fill: #b6421d; }
+.line { stroke: #171310; stroke-opacity: 0.2; stroke-width: 2; }
+.box { fill: none; stroke: #111111; stroke-width: 2; }
+.arrow { stroke: #b6421d; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+</style>
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L0,6 L9,3 z" fill="#b6421d" />
+  </marker>
+</defs>
+<text x="90" y="120" class="title"><tspan x="90" dy="0">FINDING SIGNAL IN PUBLIC OPINION</tspan></text><text x="92" y="165" class="body"><tspan x="92" dy="0">Statistics first, then language-model reading of what people</tspan><tspan x="92" dy="32">actually say</tspan></text><line x1="130" y1="690" x2="700" y2="690" class="line"/><rect x="140" y="594" width="42" height="96" fill="#b8afa2" fill-opacity="0.6"/><rect x="202" y="546" width="42" height="144" fill="#b8afa2" fill-opacity="0.6"/><rect x="264" y="482" width="42" height="208" fill="#b8afa2" fill-opacity="0.6"/><rect x="326" y="354" width="42" height="336" fill="#b8afa2" fill-opacity="0.6"/><rect x="388" y="506" width="42" height="184" fill="#b8afa2" fill-opacity="0.6"/><rect x="450" y="274" width="42" height="416" fill="#b6421d" fill-opacity="0.9"/><rect x="512" y="442" width="42" height="248" fill="#b8afa2" fill-opacity="0.6"/><rect x="574" y="202" width="42" height="488" fill="#b6421d" fill-opacity="0.9"/><text x="165" y="740" class="small"><tspan x="165" dy="0">review count + rating normalized</tspan><tspan x="165" dy="24">with z-scores</tspan></text><line x1="760" y1="430" x2="970" y2="430" class="arrow"/><rect x="1010" y="250" width="450" height="340" class="box"/><text x="1040" y="305" class="label"><tspan x="1040" dy="0">Review summary</tspan></text><text x="1040" y="360" class="body"><tspan x="1040" dy="0">Atmosphere is lively, service is</tspan><tspan x="1040" dy="30">fast, and people repeatedly</tspan><tspan x="1040" dy="30">mention value, late hours, and</tspan><tspan x="1040" dy="30">strong local identity.</tspan></text><text x="1040" y="515" class="small"><tspan x="1040" dy="0">Statistical outlier -&gt; grouped</tspan><tspan x="1040" dy="24">reviews -&gt; readable pattern</tspan></text>
+</svg>

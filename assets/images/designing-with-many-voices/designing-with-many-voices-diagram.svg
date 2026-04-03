@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Tutorial illustration">
+<rect width="1600" height="900" fill="#f3f0e9"/>
+<style>
+text { font-family: Helvetica, Arial, sans-serif; fill: #111111; }
+.small { font-size: 22px; fill: #66615a; }
+.body { font-size: 26px; fill: #66615a; }
+.title { font-size: 58px; font-weight: 700; letter-spacing: -1px; }
+.label { font-size: 24px; font-weight: 700; }
+.accent { fill: #b6421d; }
+.line { stroke: #171310; stroke-opacity: 0.2; stroke-width: 2; }
+.box { fill: none; stroke: #111111; stroke-width: 2; }
+.arrow { stroke: #b6421d; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+</style>
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L0,6 L9,3 z" fill="#b6421d" />
+  </marker>
+</defs>
+<text x="90" y="120" class="title"><tspan x="90" dy="0">DESIGNING WITH MANY VOICES</tspan></text><text x="92" y="165" class="body"><tspan x="92" dy="0">A structured way to compare environmental, business, social, and</tspan><tspan x="92" dy="32">technical perspectives</tspan></text><rect x="180" y="330" width="220" height="130" fill="#9c8f62" fill-opacity="0.22" stroke="#111111" stroke-width="1.5"/><text x="202" y="378" class="label"><tspan x="202" dy="0">Environmental</tspan></text><text x="202" y="416" class="small"><tspan x="202" dy="0">different frame on</tspan><tspan x="202" dy="24">the same issue</tspan></text><line x1="290" y1="460" x2="800" y2="620" class="arrow"/><rect x="520" y="330" width="220" height="130" fill="#8b6b5b" fill-opacity="0.22" stroke="#111111" stroke-width="1.5"/><text x="542" y="378" class="label"><tspan x="542" dy="0">Business</tspan></text><text x="542" y="416" class="small"><tspan x="542" dy="0">different frame on</tspan><tspan x="542" dy="24">the same issue</tspan></text><line x1="630" y1="460" x2="800" y2="620" class="arrow"/><rect x="860" y="330" width="220" height="130" fill="#6e8b7f" fill-opacity="0.22" stroke="#111111" stroke-width="1.5"/><text x="882" y="378" class="label"><tspan x="882" dy="0">Social</tspan></text><text x="882" y="416" class="small"><tspan x="882" dy="0">different frame on</tspan><tspan x="882" dy="24">the same issue</tspan></text><line x1="970" y1="460" x2="800" y2="620" class="arrow"/><rect x="1200" y="330" width="220" height="130" fill="#667a8f" fill-opacity="0.22" stroke="#111111" stroke-width="1.5"/><text x="1222" y="378" class="label"><tspan x="1222" dy="0">Technical</tspan></text><text x="1222" y="416" class="small"><tspan x="1222" dy="0">different frame on</tspan><tspan x="1222" dy="24">the same issue</tspan></text><line x1="1310" y1="460" x2="800" y2="620" class="arrow"/><rect x="590" y="620" width="420" height="150" class="box"/><text x="620" y="650" class="label"><tspan x="620" dy="0">Moderator / Synthesis</tspan></text><text x="620" y="685" class="body"><tspan x="620" dy="0">agreement, tension,</tspan><tspan x="620" dy="28">tradeoff, unresolved</tspan><tspan x="620" dy="28">question</tspan></text>
+</svg>
