@@ -132,6 +132,28 @@ layout: default
   </div>
 </section>
 
+<section class="home-section" id="research">
+  <div class="section-head">
+    <p class="eyebrow">05</p>
+    <div>
+      <h2>Research</h2>
+      <p>Source-linked studies of the power, water and cost impacts of AI data centers, built for communities that need a fair assessment.</p>
+    </div>
+  </div>
+
+  <div class="tutorial-list">
+    <a class="tutorial-row" href="https://tedngai.github.io/datacenter-efficiency-study/">
+      <div class="tutorial-row-main">
+        <h3>AI Data Centers: Power, Water and Who Pays</h3>
+        <p>442 campuses in 71 countries, with US electricity prices, water use, and the rate cases behind them.</p>
+      </div>
+      <div class="tutorial-row-meta">
+        <p>Research</p>
+        <p>Power / Water / Cost</p>
+      </div>
+    </a>
+  </div>
+</section>
 <section class="home-closing">
   <p class="eyebrow">Method</p>
   <p>These tutorials are written for readers who need practical technical instruction, but also need to understand what data reveals, what it hides, and how design decisions change when evidence becomes legible.</p>
